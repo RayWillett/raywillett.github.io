@@ -24,9 +24,26 @@ var startGame = function() {
 	this.scoreBoard = get2DArray(n-1);
 	for(i=0; i<n; i++){
  		for(j=0; j<n; j++){
-    		this.ctx.fillRect(this.board[i][j].x + 100, this.board[i][j].y + 30, 1, 1);
+ 			this.ctx.beginPath();
+    		this.ctx.rect(this.board[i][j].x, this.board[i][j].y, 1, 1);
+    		this.ctx.fill();
+    		if(typeof this.ctx.addHitRegion === "function") {
+    			this.ctx.addHitRegion({id: "" + i + "," + j});
+    		} else {
+    			console.log("oops");
+    		}
   		}
 	}
+
+	//get offset
+	$('#playarea').on('click', function(event){
+		var x = event.clientX;
+		var y = event.clientY;
+		var magicValue = 530;
+		var spacing = 50;
+		var rounded = ~~((x - magicValue) / n);
+		console.log(rounded);
+	});
 }
 
 DOTS.prototype.constructor = DOTS;
@@ -36,7 +53,7 @@ var getNumberPlayers = function() {
 }
 
 var getBoardSize = function() {
-	return 8; //TODO
+	return 15; //TODO
 }
 
 //must be a square matrix
@@ -64,4 +81,8 @@ var get2DArray = function(n){
 
 
 var d = new DOTS();
-//TODO: HITREGIONS - https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility#Hit_regions
+/*TODO: Canvas HITREGIONS- experimental, no go
+ *
+ *
+ *
+ */
