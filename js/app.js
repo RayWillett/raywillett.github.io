@@ -1,5 +1,5 @@
 particlesJS('particles',
-  
+
   {
     "particles": {
       "number": {
@@ -56,3 +56,31 @@ particlesJS('particles',
     "retina_detect": false
   }
 );
+
+function initializeEvents(app) {
+  $("#Resume").on('click', function(){
+    window.location.href = "./assets/RaymondWillett_Resume.pdf";
+  });
+  $("#IdeaBoard").on('click', function() {
+    alert("Under Construction");
+    //window.location.href = "./content/ideaboard";
+  });
+  $("#Interests").on('click', function() {
+    alert("Under Construction");
+    //window.location.href = "./content/interets";
+  });
+  $("#Blog").on('click', function() {
+    alert("Under Construction");
+    //window.location.href = "./content/blog";
+  });
+}
+
+
+(function init() {
+  if(typeof $ !== 'function') {
+    window.setTimeout(init, 100);
+  } else {
+    app = (typeof app === 'object') ? app : {};
+    initializeEvents(app);
+  }
+})();
