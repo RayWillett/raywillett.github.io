@@ -57,30 +57,20 @@ particlesJS('particles',
   }
 );
 
-function initializeEvents(app) {
-  $("#Resume").on('click', function(){
+(function() {
+  document.getElementById("Resume").addEventListener("click", function() {
     window.location.href = "./assets/RaymondWillett_Resume.pdf";
-  });
-  $("#IdeaBoard").on('click', function() {
+  }, false);
+  document.getElementById("IdeaBoard").addEventListener("click", function() {
     alert("Under Construction");
     //window.location.href = "./content/ideaboard";
-  });
-  $("#Interests").on('click', function() {
+  }, false);
+  document.getElementById("Interests").addEventListener("click", function() {
     alert("Under Construction");
     //window.location.href = "./content/interets";
-  });
-  $("#Blog").on('click', function() {
+  }, false);
+  document.getElementById("Blog").addEventListener("click", function() {
     alert("Under Construction");
     //window.location.href = "./content/blog";
-  });
-}
-
-
-(function init() {
-  if(typeof $ !== 'function') {
-    window.setTimeout(init, 100);
-  } else {
-    app = (typeof app === 'object') ? app : {};
-    initializeEvents(app);
-  }
+  }, false);
 })();
