@@ -37,6 +37,10 @@ footer {
 	height: 100%;
 }
 
+.alignment-height-wrapper.left {
+	margin-right: 20px;
+}
+
 .clearfix:after {
     clear: both;
     content: ".";

@@ -107,6 +107,7 @@
          $(".project-list").find(".section").each(function(i, e) {
            if(i % 2) {
              $(e).find(">:first-child").addClass("right-align").find(">div.project-description").addClass("right");
+             $(e).find(".alignment-height-wrapper").addClass("left");
            }
            else {
              $(e).find(">:first-child").addClass("left-align");
