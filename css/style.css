@@ -1,6 +1,7 @@
 html, body {
-	font-family: roboto;
+	font-family: 'Roboto', sans-serif;
 	background-color: #eee;
+	height: 100%;
 }
 
 body {
@@ -19,4 +20,32 @@ footer {
 
 .divider {
 	margin: 1em 0;
+}
+
+.project-description {
+	display: table;
+}
+
+.project-description >img {
+	width: 80px;
+	height: 80px;
+}
+
+.alignment-height-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.section >.js-aligned {
+	padding: 5px;
 }

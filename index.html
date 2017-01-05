@@ -3,7 +3,7 @@
    <head>
      <!--Import Google Icon Font-->
      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" rel="stylesheet">
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
@@ -17,10 +17,10 @@
      <nav>
        <div class="nav-wrapper blue">
          <div class="container">
-           <a href="/" class="brand-logo">Raymond Willett</a>
-           <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <a href="#" class="brand-logo">Raymond Willett</a>
+           <ul id="navbar" class="right">
              <!--<li><a href="./BlogLanding.html">Blog</a></li>-->
-             <li><a href="./Projects.html">About</a></li>
+             <li><a href="./assets/AboutMe.html">About</a></li>
              <li><a href="./assets/RaymondWillett_Resume.pdf">Resume</a></li>
            </ul>
          </div>
@@ -29,26 +29,63 @@
      <div id="main">
        <div class="container">
          <div class="section">
+           <!-- Nothing to see here -->
+         </div>
+         <div class="project-list">
+           <div class="divider"></div>
+           <div class="section clearfix">
+              <div class="js-aligned">
+                <h5 class="project-name">Valet</h5>
+                  <div class="project-description">
+                    <img src="./assets/car.png"/>
+                    <div class="alignment-height-wrapper">
+                      Tracking cars
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+           <div class="section clearfix">
+              <div class="js-aligned">
+                <h5 class="project-name">DigDeep</h5>
+                  <div class="project-description">
+                    <img src="./assets/dig.png"/>
+                    <div class="alignment-height-wrapper">
+                      Due for a refactor.
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="section clearfix">
+              <div class="js-aligned">
+                <h5 class="project-name">SimpleChess</h5>
+                <div class="project-description">
+                  <img src="./assets/queen.png"/>
+                  <div class="alignment-height-wrapper">
+                    Written in java. Plays a simplified version of chess
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
 
-         </div>
-         <div class="divider"></div>
-         <div class="section">
-           <div class="left-align">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           </div>
-         </div>
-         <div class="divider"></div>
-         <div class="section">
-           <div class="right-align">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           </div>
-         </div>
-         <div class="divider"></div>
-         <div class="section">
-           <div class="left-align">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.           </div>
-         </div>
-         <div class="divider"></div>
+           <!-- 
+             <div class="section clearfix">
+              <div class="js-aligned">
+                <h5 class="project-name">Project Name</h5>
+                  <div class="project-description">
+                    <img src="./assets/placeholder.png"/>
+                    <div class="alignment-height-wrapper">
+                      I wrote some code that did some stuff. Or I did some stuff and something happened as a result.  
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            -->
+
+          </div>
        </div>
      </div>
      <footer class="page-footer blue right-align">
@@ -65,10 +102,22 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
      <script>
-       var update = function() {
+       
+       $(function() {
+         $(".project-list").find(".section").each(function(i, e) {
+           if(i % 2) {
+             $(e).find(">:first-child").addClass("right-align").find(">div.project-description").addClass("right");
+           }
+           else {
+             $(e).find(">:first-child").addClass("left-align");
+           }
+         });
+       });
+       
+       /*var update = function() {
          requestAnimationFrame(update);
        };
-       requestAnimationFrame(update);
+       requestAnimationFrame(update);*/
      </script>
    </body>
 </html>
