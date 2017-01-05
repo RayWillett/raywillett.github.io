@@ -56,21 +56,3 @@ particlesJS('particles',
     "retina_detect": false
   }
 );
-
-(function() {
-  document.getElementById("Resume").addEventListener("click", function() {
-    window.location.href = "./assets/RaymondWillett_Resume.pdf";
-  }, false);
-  document.getElementById("IdeaBoard").addEventListener("click", function() {
-    alert("Under Construction");
-    //window.location.href = "./content/ideaboard";
-  }, false);
-  document.getElementById("Interests").addEventListener("click", function() {
-    alert("Under Construction");
-    //window.location.href = "./content/interets";
-  }, false);
-  document.getElementById("Blog").addEventListener("click", function() {
-    alert("Under Construction");
-    //window.location.href = "./content/blog";
-  }, false);
-})();
