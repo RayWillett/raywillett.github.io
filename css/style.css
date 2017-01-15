@@ -53,3 +53,11 @@ footer {
 .section >.js-aligned {
 	padding: 5px;
 }
+
+.section.project {
+	width: 70%;
+}
+
+a.plaintext {
+	color: rgba(255,255,255,0.8);
+}
