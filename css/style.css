@@ -1,5 +1,4 @@
 html, body {
-	font-family: 'Roboto', sans-serif;
 	background-color: #eee;
 	height: 100%;
 }
@@ -10,54 +9,14 @@ body {
   flex-direction: column;
 }
 
-#main {
-	flex: 1 0 auto;
-}
-
 footer {
 	color: #D3D3D3;
 }
 
-.divider {
-	margin: 1em 0;
-}
-
-.project-description {
-	display: table;
-}
-
-.project-description >img {
-	width: 80px;
-	height: 80px;
-}
-
-.alignment-height-wrapper {
-	display: table-cell;
-	vertical-align: middle;
-	height: 100%;
-}
-
-.alignment-height-wrapper.left {
-	margin-right: 20px;
-}
-
-.clearfix:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
-}
-
-.section >.js-aligned {
-	padding: 5px;
-}
-
-.section.project {
-	width: 70%;
+#main {
+	flex: 1 0 auto;
 }
 
 a.plaintext {
-	color: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.87);
 }

@@ -1,144 +1,31 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <!--Import Google Icon Font-->
      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" rel="stylesheet">
-     <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
-
-     <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <title>Raymond Willett</title>
+     <title>The Endless Journey</title>
    </head>
-
    <body>
-     <nav>
-       <div class="nav-wrapper blue">
-         <div class="container">
-           <a href="#" class="brand-logo">Raymond Willett</a>
-           <ul id="navbar" class="right hide-on-small-only">
-             <!--<li><a href="./BlogLanding.html">Blog</a></li>-->
-             <li><a href="#" data-future="./assets/AboutMe.html">About</a></li>
-             <li><a href="./assets/RaymondWillett_Resume.pdf">Resume</a></li>
-           </ul>
-         </div>
-       </div>
-     </nav>
      <div id="main">
-       <div class="container">
-         <div class="section">
-           <!-- Nothing to see here -->
-           This is my website. There are many like it but this one is mine. It's still a work in progress and I've got a list of items that will be changing about it. But it's a major improvement over that last iteration!
-         </div>
-         <div class="project-list">
-         <div class="divider"></div>
-
-           <div class="section clearfix project">
-              <div class="js-aligned">
-                <h5 class="project-name">Valet</h5>
-                  <div class="project-description">
-                    <img src="./assets/car.png"/>
-                    <div class="alignment-height-wrapper">
-                      Trackings the movement of vehicles into and out of a parking lot
-                      using the OpenCV Python library and a raspberry pi as a node in a network of sensors.
-                      The idea originally spawned at Hack The North 2016 as a solution to the parking congestion on my University's website.
-
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="divider clearfix"></div>
-
-           <div class="section clearfix right project">
-              <div class="js-aligned">
-                  <div class="project-description">
-                    <div class="alignment-height-wrapper">
-                      Due for a refactor. A 3D dungeon crawling game written in JavaScript using the ThreeJS wrapper. Written at my first hackathon at HackEastern 2015.
-                    </div>
-                    <h5 class="project-name right-align">DigDeep</h5>
-                    <img src="./assets/dig.png"/>
-                  </div>
-              </div>
-            </div>
-            <div class="divider clearfix"></div>
-
-            <div class="section clearfix project">
-              <div class="js-aligned">
-                <h5 class="project-name">SimpleChess</h5>
-                <div class="project-description">
-                  <img src="./assets/queen.png"/>
-                  <div class="alignment-height-wrapper">
-                    Written in java. Plays a simplified version of chess. Uses minimax with alpha-beta pruning and a fitness function based on number of enemy pieces and their relative position.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="divider clearfix"></div>
-
-            <div class="section clearfix right project">
-              <div class="js-aligned">
-                  <div class="project-description">
-                    <div class="alignment-height-wrapper">
-                      Random (incorrect) logical expression generator using a context-free grammar. Eventually I will post the BNF here, but not today :)
-                    </div>
-                    <h5 class="project-name right-align">Illogical</h5>
-                    <img src="./assets/placeholder.png"/>
-                  </div>
-              </div>
-            </div>
-            <div class="divider clearfix"></div>
-
-           <!--
-             <div class="section clearfix">
-              <div class="js-aligned">
-                <h5 class="project-name">Project Name</h5>
-                  <div class="project-description">
-                    <img src="./assets/placeholder.png"/>
-                    <div class="alignment-height-wrapper">
-                      I wrote some code that did some stuff. Or I did some stuff and something happened as a result.
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <div class="divider"></div>
-            -->
-
-          </div>
-       </div>
+      <div class="row">
+        <div class="col s12">
+          <span class="grey-text text-darken-4">Hello there.</span>
+        </div>
+      </div>
      </div>
-     <footer class="page-footer blue right-align">
-       <div class="footer-copyright">
-         <div class="container">
-           <a href="mailto:rwillet2@emich.edu" class="plaintext">Raymond Willett</a>
-           <span> | &copy MIT</span>
-           <span> | 2017</span>
+     <footer class="right-align">
+       <div class="row">
+         <div class="col s12">
+           <a href="mailto:ray@mobiustrips.com" class="grey-text text-darken-4">Contact</a>
+           <span class="grey-text text-darken-4"> | &copy Raymond Willett 2020</span>
          </div>
        </div>
      </footer>
-
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script>
-
-       /*$(function() {
-         $(".project-list").find(".section").each(function(i, e) {
-           if(i % 2) {
-             $(e).find(">:first-child").addClass("right-align").find(">div.project-description").addClass("right");
-             $(e).find(".alignment-height-wrapper").addClass("left");
-           }
-           else {
-             $(e).find(">:first-child").addClass("left-align");
-           }
-         });
-       });
-
-       var update = function() {
-         requestAnimationFrame(update);
-       };
-       requestAnimationFrame(update);*/
-     </script>
    </body>
 </html>
